@@ -3,50 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trusti Multi</title>
+  <title>Trusti Wallet</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="app">
-    <header class="top-bar">
-      <h1>Trusti</h1>
+    <header>
+      <h1>Trusti Wallet</h1>
     </header>
 
     <section class="balance-section">
-      <p class="balance-label">Total Balance</p>
-      <h2 class="balance-amount">$0.00</h2>
+      <p class="label">Баланс</p>
+      <h2 class="balance">0.00 USDT</h2>
     </section>
 
-    <div class="tabs">
-      <button class="tab active">Tokens</button>
-      <button class="tab">NFTs</button>
-    </div>
-
-    <section class="coins-list">
-      <div class="coin">
-        <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="BTC" />
-        <div class="coin-info">
-          <span class="coin-name">Bitcoin</span>
-          <span class="coin-balance">0 BTC</span>
-        </div>
-        <div class="coin-value">$0.00</div>
-      </div>
-      <div class="coin">
-        <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="ETH" />
-        <div class="coin-info">
-          <span class="coin-name">Ethereum</span>
-          <span class="coin-balance">0 ETH</span>
-        </div>
-        <div class="coin-value">$0.00</div>
-      </div>
+    <section class="import-section">
+      <label for="private-key">Импорт кошелька</label>
+      <input
+        type="text"
+        id="private-key"
+        placeholder="Сид-фраза или приватный ключ"
+      />
+      <button onclick="importWallet()">Импортировать</button>
     </section>
 
-    <footer class="bottom-nav">
-      <div>Wallet</div>
-      <div>Discover</div>
-      <div>Browser</div>
-      <div>Settings</div>
-    </footer>
+    <div id="wallet-info"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
